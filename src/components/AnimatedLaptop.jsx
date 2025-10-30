@@ -39,7 +39,7 @@ export default function AnimatedLaptop() {
                   cursorStyle="_"
                   typeSpeed={70}
                   deleteSpeed={50}
-                  delaySpeed={2000}
+                  delaySpeed={1500}
                 />
               </span>
             </div>

@@ -209,7 +209,10 @@ export default function App() {
       )}
       <header className="fixed top-0 inset-x-0 z-40 border-b border-slate-800/60 bg-slate-950/60 backdrop-blur supports-[backdrop-filter]:bg-slate-950/40">
         <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 h-20 flex items-center justify-between">
-          <div className="flex items-center text-slate-300 text-base font-medium relative -translate-x-[72px] md:-translate-x-[120px] lg:-translate-x-[152px] xl:-translate-x-[184px]">
+          <a
+            href="https://portfolio-nu-woad-23.vercel.app/"
+            className="flex items-center text-slate-300 text-base font-medium relative -translate-x-[72px] md:-translate-x-[120px] lg:-translate-x-[152px] xl:-translate-x-[184px] hover:text-accent transition"
+          >
             <div ref={headerHexRef} className={`relative w-12 h-12 transition-opacity ${phase === 'hexMove' ? 'duration-0 opacity-0' : 'duration-300 opacity-100'}`}>
               <svg className="absolute inset-0 animate-hex-pop z-0" viewBox="0 0 100 100" aria-hidden>
                 <defs>
@@ -220,7 +223,7 @@ export default function App() {
               <span className="absolute inset-0 grid place-items-center text-xl font-extrabold text-accent">R</span>
             </div>
             <span className="relative z-10 -ml-4">{typedName}</span>
-          </div>
+          </a>
           <nav className="translate-x-10 md:translate-x-20 lg:translate-x-28 xl:translate-x-36">
             <ul className="flex items-center gap-6 text-sm text-slate-300">
               {nav.map((n, i) => (
